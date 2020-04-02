@@ -1,14 +1,19 @@
 <template lang="pug">
   .container
-    route-info
+    my-menu
+    router-view
 </template>
 
 <script>
-import RouteInfo from './components/route-info/route-info'
+import { setUserAuth } from 'src/index'
+import MyMenu from './components/menu/menu'
 
 export default {
   components: {
-    RouteInfo
+    MyMenu
+  },
+  created () {
+    setUserAuth(['auth_a'])
   }
 }
 </script>
