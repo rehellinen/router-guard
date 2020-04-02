@@ -27,7 +27,8 @@ module.exports = {
     alias: {
       '@': r('./demo'),
       assets: r(`./demo/assets`),
-      sass: r(`./demo/assets/sass`)
+      sass: r(`./demo/assets/sass`),
+      src: r(`./src`)
     },
     modules: [r('node_modules')],
     extensions: ['.vue', '.js', '.json'],
