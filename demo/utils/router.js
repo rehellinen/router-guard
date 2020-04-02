@@ -12,6 +12,8 @@ const routes = [
   { path: '/path_b', component: RouterInfo },
   { path: '/path_c', component: RouterInfo },
   { path: '/path_d', component: RouterInfo },
+  { path: '/index', component: RouterInfo },
+  { path: '/not_login', component: RouterInfo },
   { path: '*', redirect: '/' }
 ]
 
