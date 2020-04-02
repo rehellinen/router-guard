@@ -3,7 +3,7 @@ import { publicRoutes, routerConfig } from './config'
 // 判断str是否以prefix开头，若不是则将str补上前缀prefix
 const startsWith = (str, prefix) => str.startsWith(prefix) ? str : prefix + str
 
-// 设置用户权限
+// 设置用户权限，auth为一个数组，格式类似['auth_a', 'auth_b']
 export const setUserAuth = (auth = []) => {
   localStorage.setItem('__auth__', JSON.stringify(auth))
 }

@@ -1,10 +1,10 @@
 // 不用权限验证的路由
 export const publicRoutes = [
-  '/', '/not_login'
+  '/index', '/not_login'
 ]
 
 /**
- *
+ * 路由权限配置
  * @param path route路径
  * @param auth 权限名称
  */
