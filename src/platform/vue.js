@@ -1,3 +1,4 @@
+import config from '../config'
 import { guard } from '../index'
 
 export function routerGuard (to, from, next) {
@@ -5,7 +6,7 @@ export function routerGuard (to, from, next) {
 
   if (!hasAuth) {
     alert(`无权限访问路由：${to.path}`)
-    next({ path: '/' })
+    next({ path: config.defaultRoute })
   } else {
     next()
   }

@@ -1,4 +1,5 @@
-import { publicRoutes, routerConfig } from './config'
+import config from './config'
+const { publicRoutes, routerConfig } = config
 
 // 判断str是否以prefix开头，若不是则将str补上前缀prefix
 const startsWith = (str, prefix) => str.startsWith(prefix) ? str : prefix + str

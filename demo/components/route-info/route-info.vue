@@ -14,8 +14,10 @@
 </template>
 
 <script>
-import { routerConfig, publicRoutes } from 'src/config.js'
+import config from 'src/config.js'
 import { getUserAuth } from 'src/index'
+
+const { routerConfig, publicRoutes } = config
 
 export default {
   data () {
