@@ -20,10 +20,9 @@ export const getUserAuth = () => {
 export function guard (path) {
   // 容错处理
   path = startsWith(path, '/')
-
   // 判断是否为不用权限验证的路由
   const isPublic = publicRoutes
-    .map(item => startsWith(item))
+    .map(item => startsWith(item, '/'))
     .includes(path)
   if (isPublic) {
     return true
@@ -58,5 +57,6 @@ export function getEnableRoutes () {
       }
     }
   }
+  res.push(...publicRoutes)
   return res
 }
